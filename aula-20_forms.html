@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" enctype="multipart/form-data"> 
+        <!--method  post envia protegido sem aparecer na url / enctype="multipart/form-data é necessário para enviar dados e anexo junto-->
+            
+        Digite seus dados endereço:
+        <br><br>
+        <br>
+        <label>
+            Rua:
+            <input type="text" name="rua" autocomplete="street-address">
+        </label>
+       
+        <label>
+            Numero:
+            <input type="number" name="numero" >
+        </label>
+
+        <label>
+            Email:
+            <input type="email" name="email" >
+        </label>
+        <br>
+        <br>
+
+        <label>
+            Arquivo:
+            <input type="file" name="arquivo" >
+        </label>
+        <br>
+        <br>
+
+        <button type="reset"> Limpar campos</button>
+        <br><br>
+        <button type="submit"> Enviar dados</button>
+        <br>
+       
+    </form>
+</body>
+</html>

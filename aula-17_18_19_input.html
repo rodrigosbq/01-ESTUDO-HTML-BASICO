@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+   <h1>Aprendendo sobre Inputs</h1> 
+
+       <h4>Input serve para incluir informações do usuario na página e pode ser vinculado a uma Label ficando dentro da label</h4> 
+       <p>Ex:</p>
+<label>
+    Nome:
+    <input autocomplete="nome" placeholder="Digite seu nome" autofocus/>
+</label>
+   
+    <p> Além das funções incluidas no exemplo acima, é possível acrescentar funções como readonly ;  disabled value="rodrigosbq@gmail.com"</p>
+
+    <p>Ou o Input também pode ser vinculado a Label com um ID e um for </p>
+
+    <label for="cidade">  Cidade: </label>
+    <input  id="cidade" />
+
+    <p> Com o input podemos solicitar para o usuário escolher uma cor ou definir um "range" apenas com o mouse</p>
+    <input type="color"/>
+    <br>
+    <input type="range" min="0" max="100" value="50"/>
+
+    <p> Existem inputs específicos para o tipo senha e email por exemplo:</p>
+    <br>
+    <label> Senha: <input type="password" /> </label>
+    <br>
+    <label> Email: <input type="email" /> </label>
+    <br>
+    <label> Gostaria de salvar seus dados?  <input type="checkbox" /> </label>
+
+    <p> Através do Input é possível ainda enviar arquivos para o site</p>
+    <label> Envie sua melhor foto 
+        <br> <input type="file" /> 
+    </label>
+    <br>   <br> 
+    <label> Envie as fotos do seu carro
+        <br> <input type="file" multiple  accept=".jpeg"/> 
+    </label>
+<p> Pode se filtrar para que o usuário insira apenas por tipo "video/*" ; "image/*" ou áudio "audio/*"  
+    ou por tipo de extenção utilizando o <i>accept</i>     </p> 
+
+    <br>
+    <h4>Qual sua rede social favorita ?</h4>
+    <br>
+
+
+    <label for="facebook"> Facebook
+    </label>
+    <input type="radio" id="facebook" name="rede-sociais"/>
+
+    <label for="instagram"> Instagram
+    </label>
+    <input type="radio" id="instagram" name="rede-sociais"/>
+
+    <label for="youtube"> Youtube
+    </label>
+    <input type="radio" id="youtube" name="rede-sociais"/>
+
+</body>
+</html>
